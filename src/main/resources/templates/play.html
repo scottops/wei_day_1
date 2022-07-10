@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/images/logo.png}" rel="icon" type="image/x-icon">
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+    <title>直课堂视频</title>
+</head>
+<body>
+
+<div id="app">
+    <form th:action="@{/zkt/doPlay}" onsubmit="return urlCheck()">
+        <div class="ibox">
+            <input class="input" name="url" type="search" placeholder="输入地址(腾讯视频/优酷/爱奇艺)视频地址">
+            <input class="button" type="submit" value="播放">
+        </div>
+    </form>
+</div>
+<script th:src="@{/js/index.js}"></script>
+</body>
+</html>
